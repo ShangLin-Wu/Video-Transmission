@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="popupViewController" customModule="videoTransmissionProject" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraTableView" destination="hBX-QO-Opf" id="pYa-5s-qTJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="cE5-12-waG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIButton">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isa-kE-M0I">
+                    <rect key="frame" x="57" y="273" width="300" height="350"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hBX-QO-Opf">
+                            <rect key="frame" x="0.0" y="50" width="300" height="300"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihA-DG-5U3">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="選擇攝影機" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YR-le-5pu">
+                                    <rect key="frame" x="106.5" y="15" width="87" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.50295788257898011" green="0.71425637078502513" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3ny-cD-gEq"/>
+                                <constraint firstItem="0YR-le-5pu" firstAttribute="top" secondItem="ihA-DG-5U3" secondAttribute="top" constant="15" id="FGy-RH-mv9"/>
+                                <constraint firstItem="0YR-le-5pu" firstAttribute="centerY" secondItem="ihA-DG-5U3" secondAttribute="centerY" id="h95-cb-wXx"/>
+                                <constraint firstItem="0YR-le-5pu" firstAttribute="centerX" secondItem="ihA-DG-5U3" secondAttribute="centerX" id="hAw-mo-kVI"/>
+                                <constraint firstAttribute="bottom" secondItem="0YR-le-5pu" secondAttribute="bottom" constant="15" id="jvt-zP-e8C"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="ihA-DG-5U3" firstAttribute="leading" secondItem="Isa-kE-M0I" secondAttribute="leading" id="8cR-mt-oGN"/>
+                        <constraint firstAttribute="width" constant="300" id="Dbd-XS-xsr"/>
+                        <constraint firstAttribute="bottom" secondItem="hBX-QO-Opf" secondAttribute="bottom" id="PCv-gH-4fL"/>
+                        <constraint firstItem="ihA-DG-5U3" firstAttribute="top" secondItem="Isa-kE-M0I" secondAttribute="top" id="aO7-Cp-NYp"/>
+                        <constraint firstItem="hBX-QO-Opf" firstAttribute="leading" secondItem="Isa-kE-M0I" secondAttribute="leading" id="d4i-aA-lSg"/>
+                        <constraint firstAttribute="height" constant="350" id="dMy-Tb-DOb"/>
+                        <constraint firstItem="hBX-QO-Opf" firstAttribute="top" secondItem="ihA-DG-5U3" secondAttribute="bottom" id="etB-gS-6Ml"/>
+                        <constraint firstAttribute="trailing" secondItem="hBX-QO-Opf" secondAttribute="trailing" id="klr-Ny-SZ8"/>
+                        <constraint firstAttribute="trailing" secondItem="ihA-DG-5U3" secondAttribute="trailing" id="zIr-Rk-kat"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Isa-kE-M0I" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="81N-wp-lu4"/>
+                <constraint firstItem="Isa-kE-M0I" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h2o-PY-Odv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <action selector="dissmissVC:" destination="-1" eventType="touchUpInside" id="6Xj-Sa-elB"/>
+            </connections>
+            <point key="canvasLocation" x="-61" y="257"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks.sh
+${PODS_ROOT}/JitsiMeetSDK/Frameworks/JitsiMeet.framework
+${PODS_ROOT}/JitsiMeetSDK/Frameworks/WebRTC.framework

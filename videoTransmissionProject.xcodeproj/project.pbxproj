@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F98709BCD4C7EFACF964259 /* Pods_videoTransmissionProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C964E32FA6DBB800EE29EF /* Pods_videoTransmissionProject.framework */; };
+		356E303E244FF575002EBF59 /* apiAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E303D244FF575002EBF59 /* apiAgent.swift */; };
+		356E3040245019E2002EBF59 /* apiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E303F245019E2002EBF59 /* apiData.swift */; };
+		356E304224503485002EBF59 /* apiFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E304124503485002EBF59 /* apiFunction.swift */; };
+		356E30452450658C002EBF59 /* popupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E30432450658C002EBF59 /* popupViewController.swift */; };
+		356E30462450658C002EBF59 /* popupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 356E30442450658C002EBF59 /* popupViewController.xib */; };
+		35839009244F4AB4008A8F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35839008244F4AB4008A8F95 /* AppDelegate.swift */; };
+		3583900B244F4AB4008A8F95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583900A244F4AB4008A8F95 /* SceneDelegate.swift */; };
+		3583900D244F4AB4008A8F95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583900C244F4AB4008A8F95 /* ViewController.swift */; };
+		35839010244F4AB4008A8F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3583900E244F4AB4008A8F95 /* Main.storyboard */; };
+		35839012244F4AB7008A8F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35839011244F4AB7008A8F95 /* Assets.xcassets */; };
+		35839015244F4AB7008A8F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35839013244F4AB7008A8F95 /* LaunchScreen.storyboard */; };
+		35839020244F4AB7008A8F95 /* videoTransmissionProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583901F244F4AB7008A8F95 /* videoTransmissionProjectTests.swift */; };
+		3583902B244F4AB7008A8F95 /* videoTransmissionProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583902A244F4AB7008A8F95 /* videoTransmissionProjectUITests.swift */; };
+		35839039244F4DDD008A8F95 /* settingCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35839038244F4DDD008A8F95 /* settingCameraViewController.xib */; };
+		3583903B244F4E0B008A8F95 /* settingCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583903A244F4E0B008A8F95 /* settingCameraViewController.swift */; };
+		79A34589B24E4F8BBD3119BF /* Pods_videoTransmissionProject_videoTransmissionProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 241E99DFE831EE9C5B1F19F4 /* Pods_videoTransmissionProject_videoTransmissionProjectUITests.framework */; };
+		EBBAE4C192F964E58257B01D /* Pods_videoTransmissionProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688EC28BC1EAAAFCFF66AD54 /* Pods_videoTransmissionProjectTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3583901C244F4AB7008A8F95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35838FFD244F4AB4008A8F95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35839004244F4AB4008A8F95;
+			remoteInfo = videoTransmissionProject;
+		};
+		35839027244F4AB7008A8F95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35838FFD244F4AB4008A8F95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35839004244F4AB4008A8F95;
+			remoteInfo = videoTransmissionProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		241E99DFE831EE9C5B1F19F4 /* Pods_videoTransmissionProject_videoTransmissionProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_videoTransmissionProject_videoTransmissionProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A6885CB80DE1FBFF520D6C5 /* Pods-videoTransmissionProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTransmissionProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-videoTransmissionProjectTests/Pods-videoTransmissionProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0A3458B59ADD7274A93879 /* Pods-videoTransmissionProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTransmissionProject.debug.xcconfig"; path = "Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject.debug.xcconfig"; sourceTree = "<group>"; };
+		356E303D244FF575002EBF59 /* apiAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiAgent.swift; sourceTree = "<group>"; };
+		356E303F245019E2002EBF59 /* apiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiData.swift; sourceTree = "<group>"; };
+		356E304124503485002EBF59 /* apiFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiFunction.swift; sourceTree = "<group>"; };
+		356E30432450658C002EBF59 /* popupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupViewController.swift; sourceTree = "<group>"; };
+		356E30442450658C002EBF59 /* popupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = popupViewController.xib; sourceTree = "<group>"; };
+		35839005244F4AB4008A8F95 /* videoTransmissionProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoTransmissionProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35839008244F4AB4008A8F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3583900A244F4AB4008A8F95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3583900C244F4AB4008A8F95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3583900F244F4AB4008A8F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35839011244F4AB7008A8F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35839014244F4AB7008A8F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35839016244F4AB7008A8F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3583901B244F4AB7008A8F95 /* videoTransmissionProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoTransmissionProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3583901F244F4AB7008A8F95 /* videoTransmissionProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTransmissionProjectTests.swift; sourceTree = "<group>"; };
+		35839021244F4AB7008A8F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35839026244F4AB7008A8F95 /* videoTransmissionProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoTransmissionProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3583902A244F4AB7008A8F95 /* videoTransmissionProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTransmissionProjectUITests.swift; sourceTree = "<group>"; };
+		3583902C244F4AB7008A8F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35839038244F4DDD008A8F95 /* settingCameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = settingCameraViewController.xib; sourceTree = "<group>"; };
+		3583903A244F4E0B008A8F95 /* settingCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCameraViewController.swift; sourceTree = "<group>"; };
+		47C0EC3987D9DE6DF61ED8CC /* Pods-videoTransmissionProject-videoTransmissionProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTransmissionProject-videoTransmissionProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		484F1893231F39144E36E8A7 /* Pods-videoTransmissionProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTransmissionProject.release.xcconfig"; path = "Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject.release.xcconfig"; sourceTree = "<group>"; };
+		49C964E32FA6DBB800EE29EF /* Pods_videoTransmissionProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_videoTransmissionProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		688EC28BC1EAAAFCFF66AD54 /* Pods_videoTransmissionProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_videoTransmissionProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39EA15414D81CC2915E519D /* Pods-videoTransmissionProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTransmissionProjectTests.release.xcconfig"; path = "Target Support Files/Pods-videoTransmissionProjectTests/Pods-videoTransmissionProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9DD0A79B2FB7656D598C0F7 /* Pods-videoTransmissionProject-videoTransmissionProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTransmissionProject-videoTransmissionProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35839002244F4AB4008A8F95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F98709BCD4C7EFACF964259 /* Pods_videoTransmissionProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35839018244F4AB7008A8F95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBAE4C192F964E58257B01D /* Pods_videoTransmissionProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35839023244F4AB7008A8F95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A34589B24E4F8BBD3119BF /* Pods_videoTransmissionProject_videoTransmissionProjectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4BEA9D49E46D5565A64B66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49C964E32FA6DBB800EE29EF /* Pods_videoTransmissionProject.framework */,
+				241E99DFE831EE9C5B1F19F4 /* Pods_videoTransmissionProject_videoTransmissionProjectUITests.framework */,
+				688EC28BC1EAAAFCFF66AD54 /* Pods_videoTransmissionProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31AFFD91ADB4CCE9CEB27A66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A3458B59ADD7274A93879 /* Pods-videoTransmissionProject.debug.xcconfig */,
+				484F1893231F39144E36E8A7 /* Pods-videoTransmissionProject.release.xcconfig */,
+				47C0EC3987D9DE6DF61ED8CC /* Pods-videoTransmissionProject-videoTransmissionProjectUITests.debug.xcconfig */,
+				D9DD0A79B2FB7656D598C0F7 /* Pods-videoTransmissionProject-videoTransmissionProjectUITests.release.xcconfig */,
+				2A6885CB80DE1FBFF520D6C5 /* Pods-videoTransmissionProjectTests.debug.xcconfig */,
+				B39EA15414D81CC2915E519D /* Pods-videoTransmissionProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		356E303C244FF563002EBF59 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				356E303F245019E2002EBF59 /* apiData.swift */,
+				356E303D244FF575002EBF59 /* apiAgent.swift */,
+				356E304124503485002EBF59 /* apiFunction.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		356E304724506595002EBF59 /* popupVC */ = {
+			isa = PBXGroup;
+			children = (
+				356E30432450658C002EBF59 /* popupViewController.swift */,
+				356E30442450658C002EBF59 /* popupViewController.xib */,
+			);
+			path = popupVC;
+			sourceTree = "<group>";
+		};
+		35838FFC244F4AB4008A8F95 = {
+			isa = PBXGroup;
+			children = (
+				35839007244F4AB4008A8F95 /* videoTransmissionProject */,
+				3583901E244F4AB7008A8F95 /* videoTransmissionProjectTests */,
+				35839029244F4AB7008A8F95 /* videoTransmissionProjectUITests */,
+				35839006244F4AB4008A8F95 /* Products */,
+				31AFFD91ADB4CCE9CEB27A66 /* Pods */,
+				0A4BEA9D49E46D5565A64B66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		35839006244F4AB4008A8F95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35839005244F4AB4008A8F95 /* videoTransmissionProject.app */,
+				3583901B244F4AB7008A8F95 /* videoTransmissionProjectTests.xctest */,
+				35839026244F4AB7008A8F95 /* videoTransmissionProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35839007244F4AB4008A8F95 /* videoTransmissionProject */ = {
+			isa = PBXGroup;
+			children = (
+				356E304724506595002EBF59 /* popupVC */,
+				356E303C244FF563002EBF59 /* api */,
+				3583903C244F4E1C008A8F95 /* settingCameraVC */,
+				35839008244F4AB4008A8F95 /* AppDelegate.swift */,
+				3583900A244F4AB4008A8F95 /* SceneDelegate.swift */,
+				3583900C244F4AB4008A8F95 /* ViewController.swift */,
+				3583900E244F4AB4008A8F95 /* Main.storyboard */,
+				35839011244F4AB7008A8F95 /* Assets.xcassets */,
+				35839013244F4AB7008A8F95 /* LaunchScreen.storyboard */,
+				35839016244F4AB7008A8F95 /* Info.plist */,
+			);
+			path = videoTransmissionProject;
+			sourceTree = "<group>";
+		};
+		3583901E244F4AB7008A8F95 /* videoTransmissionProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3583901F244F4AB7008A8F95 /* videoTransmissionProjectTests.swift */,
+				35839021244F4AB7008A8F95 /* Info.plist */,
+			);
+			path = videoTransmissionProjectTests;
+			sourceTree = "<group>";
+		};
+		35839029244F4AB7008A8F95 /* videoTransmissionProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3583902A244F4AB7008A8F95 /* videoTransmissionProjectUITests.swift */,
+				3583902C244F4AB7008A8F95 /* Info.plist */,
+			);
+			path = videoTransmissionProjectUITests;
+			sourceTree = "<group>";
+		};
+		3583903C244F4E1C008A8F95 /* settingCameraVC */ = {
+			isa = PBXGroup;
+			children = (
+				35839038244F4DDD008A8F95 /* settingCameraViewController.xib */,
+				3583903A244F4E0B008A8F95 /* settingCameraViewController.swift */,
+			);
+			path = settingCameraVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35839004244F4AB4008A8F95 /* videoTransmissionProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3583902F244F4AB7008A8F95 /* Build configuration list for PBXNativeTarget "videoTransmissionProject" */;
+			buildPhases = (
+				A26E6794FAEEF41F9F1B0FDB /* [CP] Check Pods Manifest.lock */,
+				35839001244F4AB4008A8F95 /* Sources */,
+				35839002244F4AB4008A8F95 /* Frameworks */,
+				35839003244F4AB4008A8F95 /* Resources */,
+				4362A2DC6CFBA0D3E50B2EF4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = videoTransmissionProject;
+			productName = videoTransmissionProject;
+			productReference = 35839005244F4AB4008A8F95 /* videoTransmissionProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3583901A244F4AB7008A8F95 /* videoTransmissionProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35839032244F4AB7008A8F95 /* Build configuration list for PBXNativeTarget "videoTransmissionProjectTests" */;
+			buildPhases = (
+				DB193E5CE7AE9B84B6906EC5 /* [CP] Check Pods Manifest.lock */,
+				35839017244F4AB7008A8F95 /* Sources */,
+				35839018244F4AB7008A8F95 /* Frameworks */,
+				35839019244F4AB7008A8F95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3583901D244F4AB7008A8F95 /* PBXTargetDependency */,
+			);
+			name = videoTransmissionProjectTests;
+			productName = videoTransmissionProjectTests;
+			productReference = 3583901B244F4AB7008A8F95 /* videoTransmissionProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35839025244F4AB7008A8F95 /* videoTransmissionProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35839035244F4AB7008A8F95 /* Build configuration list for PBXNativeTarget "videoTransmissionProjectUITests" */;
+			buildPhases = (
+				7CD11B1B69BFEFDAC191C4D8 /* [CP] Check Pods Manifest.lock */,
+				35839022244F4AB7008A8F95 /* Sources */,
+				35839023244F4AB7008A8F95 /* Frameworks */,
+				35839024244F4AB7008A8F95 /* Resources */,
+				6E9A37D6F16D7FEB1FD02746 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35839028244F4AB7008A8F95 /* PBXTargetDependency */,
+			);
+			name = videoTransmissionProjectUITests;
+			productName = videoTransmissionProjectUITests;
+			productReference = 35839026244F4AB7008A8F95 /* videoTransmissionProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35838FFD244F4AB4008A8F95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = SamWu;
+				TargetAttributes = {
+					35839004244F4AB4008A8F95 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					3583901A244F4AB7008A8F95 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 35839004244F4AB4008A8F95;
+					};
+					35839025244F4AB7008A8F95 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 35839004244F4AB4008A8F95;
+					};
+				};
+			};
+			buildConfigurationList = 35839000244F4AB4008A8F95 /* Build configuration list for PBXProject "videoTransmissionProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35838FFC244F4AB4008A8F95;
+			productRefGroup = 35839006244F4AB4008A8F95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35839004244F4AB4008A8F95 /* videoTransmissionProject */,
+				3583901A244F4AB7008A8F95 /* videoTransmissionProjectTests */,
+				35839025244F4AB7008A8F95 /* videoTransmissionProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35839003244F4AB4008A8F95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35839015244F4AB7008A8F95 /* LaunchScreen.storyboard in Resources */,
+				35839012244F4AB7008A8F95 /* Assets.xcassets in Resources */,
+				35839039244F4DDD008A8F95 /* settingCameraViewController.xib in Resources */,
+				35839010244F4AB4008A8F95 /* Main.storyboard in Resources */,
+				356E30462450658C002EBF59 /* popupViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35839019244F4AB7008A8F95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35839024244F4AB7008A8F95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4362A2DC6CFBA0D3E50B2EF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E9A37D6F16D7FEB1FD02746 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD11B1B69BFEFDAC191C4D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-videoTransmissionProject-videoTransmissionProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A26E6794FAEEF41F9F1B0FDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-videoTransmissionProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB193E5CE7AE9B84B6906EC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-videoTransmissionProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35839001244F4AB4008A8F95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356E3040245019E2002EBF59 /* apiData.swift in Sources */,
+				3583900D244F4AB4008A8F95 /* ViewController.swift in Sources */,
+				356E303E244FF575002EBF59 /* apiAgent.swift in Sources */,
+				35839009244F4AB4008A8F95 /* AppDelegate.swift in Sources */,
+				3583903B244F4E0B008A8F95 /* settingCameraViewController.swift in Sources */,
+				356E304224503485002EBF59 /* apiFunction.swift in Sources */,
+				3583900B244F4AB4008A8F95 /* SceneDelegate.swift in Sources */,
+				356E30452450658C002EBF59 /* popupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35839017244F4AB7008A8F95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35839020244F4AB7008A8F95 /* videoTransmissionProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35839022244F4AB7008A8F95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3583902B244F4AB7008A8F95 /* videoTransmissionProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3583901D244F4AB7008A8F95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35839004244F4AB4008A8F95 /* videoTransmissionProject */;
+			targetProxy = 3583901C244F4AB7008A8F95 /* PBXContainerItemProxy */;
+		};
+		35839028244F4AB7008A8F95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35839004244F4AB4008A8F95 /* videoTransmissionProject */;
+			targetProxy = 35839027244F4AB7008A8F95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3583900E244F4AB4008A8F95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3583900F244F4AB4008A8F95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35839013244F4AB7008A8F95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35839014244F4AB7008A8F95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3583902D244F4AB7008A8F95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3583902E244F4AB7008A8F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35839030244F4AB7008A8F95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F0A3458B59ADD7274A93879 /* Pods-videoTransmissionProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ACX3M6X8Z7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = videoTransmissionProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-300.videoTransmissionProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35839031244F4AB7008A8F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484F1893231F39144E36E8A7 /* Pods-videoTransmissionProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ACX3M6X8Z7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = videoTransmissionProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-300.videoTransmissionProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		35839033244F4AB7008A8F95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A6885CB80DE1FBFF520D6C5 /* Pods-videoTransmissionProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = videoTransmissionProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.videoTransmissionProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoTransmissionProject.app/videoTransmissionProject";
+			};
+			name = Debug;
+		};
+		35839034244F4AB7008A8F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B39EA15414D81CC2915E519D /* Pods-videoTransmissionProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = videoTransmissionProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.videoTransmissionProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoTransmissionProject.app/videoTransmissionProject";
+			};
+			name = Release;
+		};
+		35839036244F4AB7008A8F95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47C0EC3987D9DE6DF61ED8CC /* Pods-videoTransmissionProject-videoTransmissionProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = videoTransmissionProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.videoTransmissionProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = videoTransmissionProject;
+			};
+			name = Debug;
+		};
+		35839037244F4AB7008A8F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DD0A79B2FB7656D598C0F7 /* Pods-videoTransmissionProject-videoTransmissionProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
+				INFOPLIST_FILE = videoTransmissionProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-30.videoTransmissionProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = videoTransmissionProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35839000244F4AB4008A8F95 /* Build configuration list for PBXProject "videoTransmissionProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3583902D244F4AB7008A8F95 /* Debug */,
+				3583902E244F4AB7008A8F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3583902F244F4AB7008A8F95 /* Build configuration list for PBXNativeTarget "videoTransmissionProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35839030244F4AB7008A8F95 /* Debug */,
+				35839031244F4AB7008A8F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35839032244F4AB7008A8F95 /* Build configuration list for PBXNativeTarget "videoTransmissionProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35839033244F4AB7008A8F95 /* Debug */,
+				35839034244F4AB7008A8F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35839035244F4AB7008A8F95 /* Build configuration list for PBXNativeTarget "videoTransmissionProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35839036244F4AB7008A8F95 /* Debug */,
+				35839037244F4AB7008A8F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35838FFD244F4AB4008A8F95 /* Project object */;
+}
