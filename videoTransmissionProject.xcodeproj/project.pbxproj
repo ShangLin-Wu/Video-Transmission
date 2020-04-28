@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F98709BCD4C7EFACF964259 /* Pods_videoTransmissionProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C964E32FA6DBB800EE29EF /* Pods_videoTransmissionProject.framework */; };
+		354F4442245710CF00B50BE5 /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354F4441245710CF00B50BE5 /* ViewControllerDelegate.swift */; };
 		356E303E244FF575002EBF59 /* apiAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E303D244FF575002EBF59 /* apiAgent.swift */; };
 		356E3040245019E2002EBF59 /* apiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E303F245019E2002EBF59 /* apiData.swift */; };
 		356E304224503485002EBF59 /* apiFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E304124503485002EBF59 /* apiFunction.swift */; };
@@ -48,6 +49,7 @@
 		241E99DFE831EE9C5B1F19F4 /* Pods_videoTransmissionProject_videoTransmissionProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_videoTransmissionProject_videoTransmissionProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6885CB80DE1FBFF520D6C5 /* Pods-videoTransmissionProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTransmissionProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-videoTransmissionProjectTests/Pods-videoTransmissionProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2F0A3458B59ADD7274A93879 /* Pods-videoTransmissionProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTransmissionProject.debug.xcconfig"; path = "Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject.debug.xcconfig"; sourceTree = "<group>"; };
+		354F4441245710CF00B50BE5 /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
 		356E303D244FF575002EBF59 /* apiAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiAgent.swift; sourceTree = "<group>"; };
 		356E303F245019E2002EBF59 /* apiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiData.swift; sourceTree = "<group>"; };
 		356E304124503485002EBF59 /* apiFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiFunction.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				3583903C244F4E1C008A8F95 /* settingCameraVC */,
 				35839008244F4AB4008A8F95 /* AppDelegate.swift */,
 				3583900A244F4AB4008A8F95 /* SceneDelegate.swift */,
+				354F4441245710CF00B50BE5 /* ViewControllerDelegate.swift */,
 				3583900C244F4AB4008A8F95 /* ViewController.swift */,
 				3583900E244F4AB4008A8F95 /* Main.storyboard */,
 				35839011244F4AB7008A8F95 /* Assets.xcassets */,
@@ -462,6 +465,7 @@
 				356E304224503485002EBF59 /* apiFunction.swift in Sources */,
 				3583900B244F4AB4008A8F95 /* SceneDelegate.swift in Sources */,
 				356E30452450658C002EBF59 /* popupViewController.swift in Sources */,
+				354F4442245710CF00B50BE5 /* ViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

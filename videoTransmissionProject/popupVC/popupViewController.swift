@@ -8,8 +8,7 @@
 
 import UIKit
 
-class popupViewController: UIViewController {
-    
+class popupViewController: UIViewController {    
     var cameraList: Dictionary<String,Any>? = [:]
     fileprivate var camArray : Array<list> = []
     @IBOutlet var cameraTableView: UITableView!
@@ -17,6 +16,7 @@ class popupViewController: UIViewController {
     @IBAction func dissmissVC(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if(cameraList!.count>0){
@@ -43,8 +43,8 @@ extension popupViewController : UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = settingCameraViewController.init(vcString:"observeCamera",cameraID: (camArray[indexPath.row].id!),cameraName:(camArray[indexPath.row].name!) )
-        self.requestAccessFunc(vc)
+        delegate?.presentCameraList(id: camArray[indexPath.row].id! , name: camArray[indexPath.row].name! , vcString: "observeCamera" )
+        dismiss(animated: true, completion: nil)
     }
     
     

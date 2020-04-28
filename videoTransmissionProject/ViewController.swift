@@ -13,28 +13,35 @@ let url = URL(string: "https://meet.jit.si")
 let CAMERA_SET_API_NAME = "camera/set"
 let CAMERA_LIST_API_NAME = "camera/list"
 let CAMERA_DELETE_API_NAME = "camera/delete"
+weak var delegate:ViewControllerDelegate?
 
 class ViewController: UIViewController {
-    
+    var cameraName:String!
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(notificationReceiver), name: Notification.Name("APINotification"), object: nil)
-    }
+        delegate = self
+}
     
     @objc func notificationReceiver(notification:NSNotification){
         DispatchQueue.main.async {
-            if let res = notification.object as? cameraResponse{
+            let dic = notification.object as! Dictionary<String, Any>
+            
+            if let res = dic[CAMERA_SET_API_NAME] as? cameraResponse{
                 self.handleCameraSet(res: res)
             }
-            else if let res = notification.object as? cameraResponseArr{
+            else if let res = dic[CAMERA_LIST_API_NAME] as? cameraResponseArr{
                 self.handleCameraList(res: res)
+            }
+            else if let res = dic[CAMERA_DELETE_API_NAME] as? cameraResponse{
+                self.handleCameraDelete(res: res)
             }
         }
     }
     
     func handleCameraSet(res:cameraResponse){
            if(res.status == 0){
-            let vc = settingCameraViewController.init(vcString: "setCamera", cameraID: (res.result?.id)!, cameraName: (res.result?.name)!)
+            let vc = settingCameraViewController.init(vcString: "setCamera", cameraID: (res.result?.id)!, cameraName: cameraName!)
             requestAccessFunc(vc)
            }
     }
@@ -44,11 +51,13 @@ class ViewController: UIViewController {
             if(res.result.count > 0){
                 let vc = popupViewController()
                 vc.cameraList = res.result
-                self.navigationController?.pushViewController(vc, animated: true)
-            }else{
-                
+                self.present(vc, animated: true, completion: nil)
             }
         }
+    }
+    
+    func handleCameraDelete(res:cameraResponse){
+        
     }
     
     @IBAction func setCameraBtnClick(_ sender: Any) {
@@ -64,13 +73,13 @@ class ViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
         })
         
+        
         let confirmAction = UIAlertAction(title: "Confirm", style: .default, handler: { _ in
             let text = (alertController.textFields?.first?.text)!
             if(text.count>0){
+                self.cameraName = text
                 let req = cameraSet.init(name: text,reqName: CAMERA_SET_API_NAME)
                 apiAgent.doCameraName(req: req)
-            }else{
-                alertController.message = "請先輸入名稱"
             }
         })
         alertController.addAction(cancelAction)
@@ -82,7 +91,13 @@ class ViewController: UIViewController {
         let req = cameraList.init(reqName: CAMERA_LIST_API_NAME)
         apiAgent.doCameraList(req: req)
     }
-    
+}
+
+extension ViewController: ViewControllerDelegate{
+    func presentCameraList(id: String, name: String, vcString: String) {
+        let vc = settingCameraViewController.init(vcString:vcString,cameraID: id,cameraName:name)
+        self.requestAccessFunc(vc)
+    }
 }
 
 extension UIViewController{
@@ -125,3 +140,12 @@ extension UIViewController{
     }
 }
 
+extension UIView{
+    func shake() {
+        let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.duration = 0.6
+        animation.values = [-20.0, 20.0, -20.0, 20.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
+        layer.add(animation, forKey: "shake")
+    }
+}

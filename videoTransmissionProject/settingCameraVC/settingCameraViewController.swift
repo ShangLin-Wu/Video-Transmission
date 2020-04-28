@@ -30,6 +30,9 @@ class settingCameraViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backBtn = UIBarButtonItem (title: "Back", style: .plain, target: self, action:#selector(backBtnClick))
+        self.navigationItem.leftBarButtonItem = backBtn
+        
         blackView.isHidden = self.viewController.isEqual("observeCamera")
         let jitsiView = cameraView as! JitsiMeetView
         jitsiView.delegate = self
@@ -39,7 +42,7 @@ class settingCameraViewController: UIViewController{
             builder.room = "mmslab406mmslab406" + self.cameraId
             builder.subject = self.cameraName
             
-            if(self.viewController.isEqual("observeCamera")){
+            if(self.viewController == "observeCamera"){
                 builder.audioMuted = true
                 builder.videoMuted = true
             }
@@ -49,11 +52,12 @@ class settingCameraViewController: UIViewController{
                 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    @objc func backBtnClick(){
         
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
+        if(self.viewController == "setCamera"){
+            let req = cameraDelete(id: cameraId)
+            apiAgent.doCameraDelete(req: req)
+        }
         let jitsiView = cameraView as! JitsiMeetView
         jitsiView.leave()
     }
@@ -63,5 +67,8 @@ class settingCameraViewController: UIViewController{
 extension settingCameraViewController : JitsiMeetViewDelegate{
     func conferenceJoined(_ data: [AnyHashable : Any]!) {
         
+    }
+    func conferenceTerminated(_ data: [AnyHashable : Any]!) {
+        self.navigationController?.popViewController(animated: true)
     }
 }

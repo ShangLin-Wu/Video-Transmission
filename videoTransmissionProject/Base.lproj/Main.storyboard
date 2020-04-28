@@ -15,6 +15,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eQz-IY-Fry">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.50295788259999996" green="0.71425637080000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2U8-9y-i1v"/>
@@ -32,66 +34,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ds1-fv-FMT" customClass="UIButton">
-                                <rect key="frame" x="97" y="248" width="220.5" height="42"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your camera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuE-d6-Wyf">
-                                        <rect key="frame" x="20" y="10" width="180.5" height="22"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="EuE-d6-Wyf" secondAttribute="bottom" constant="10" id="574-Ry-Qec"/>
-                                    <constraint firstAttribute="trailing" secondItem="EuE-d6-Wyf" secondAttribute="trailing" constant="20" id="9p4-ZR-kp1"/>
-                                    <constraint firstItem="EuE-d6-Wyf" firstAttribute="leading" secondItem="Ds1-fv-FMT" secondAttribute="leading" constant="20" id="BLD-rO-Oqa"/>
-                                    <constraint firstItem="EuE-d6-Wyf" firstAttribute="top" secondItem="Ds1-fv-FMT" secondAttribute="top" constant="10" id="eoK-UK-6hJ"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smartHome" translatesAutoresizingMaskIntoConstraints="NO" id="nUa-eI-3kQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="237.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipA-0V-tta">
+                                <rect key="frame" x="0.0" y="325.5" width="414" height="268.5"/>
+                                <state key="normal" image="setCamera"/>
                                 <connections>
-                                    <action selector="setCameraBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWy-kp-3Yx"/>
+                                    <action selector="setCameraBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyb-ni-a0e"/>
                                 </connections>
-                            </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySp-AG-N9x" customClass="UIButton">
-                                <rect key="frame" x="97" y="427.5" width="220.5" height="41.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Observe your camera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6J-PI-PsR">
-                                        <rect key="frame" x="20" y="10" width="180.5" height="21.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="i6J-PI-PsR" secondAttribute="bottom" constant="10" id="Hvp-52-YGs"/>
-                                    <constraint firstItem="i6J-PI-PsR" firstAttribute="top" secondItem="ySp-AG-N9x" secondAttribute="top" constant="10" id="cOQ-9v-VnG"/>
-                                    <constraint firstItem="i6J-PI-PsR" firstAttribute="leading" secondItem="ySp-AG-N9x" secondAttribute="leading" constant="20" id="phr-U1-hHy"/>
-                                    <constraint firstAttribute="trailing" secondItem="i6J-PI-PsR" secondAttribute="trailing" constant="20" id="udf-Vd-oMR"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAM-GW-ic0">
+                                <rect key="frame" x="0.0" y="593" width="414" height="269"/>
+                                <state key="normal" image="watchCamera"/>
                                 <connections>
-                                    <action selector="observeCameraBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Sl-hx-tsK"/>
+                                    <action selector="observeCameraBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X59-20-2Fx"/>
                                 </connections>
-                            </view>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ySp-AG-N9x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1IR-Ie-nbU"/>
-                            <constraint firstItem="ySp-AG-N9x" firstAttribute="width" secondItem="Ds1-fv-FMT" secondAttribute="width" id="BsB-oG-2Sq"/>
-                            <constraint firstItem="ySp-AG-N9x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Eqk-Fz-w4h"/>
-                            <constraint firstItem="Ds1-fv-FMT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" id="IEA-2O-fbZ"/>
-                            <constraint firstItem="Ds1-fv-FMT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uz0-gR-se7"/>
+                            <constraint firstItem="nUa-eI-3kQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1J5-IU-EPc"/>
+                            <constraint firstItem="RAM-GW-ic0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Fj-mR-I25"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ipA-0V-tta" secondAttribute="trailing" id="DAq-kW-xyV"/>
+                            <constraint firstItem="RAM-GW-ic0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="DTW-Ra-LjO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nUa-eI-3kQ" secondAttribute="trailing" id="EGJ-jZ-L6u"/>
+                            <constraint firstItem="nUa-eI-3kQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.265" id="Gb2-Vl-0FV"/>
+                            <constraint firstItem="ipA-0V-tta" firstAttribute="top" secondItem="nUa-eI-3kQ" secondAttribute="bottom" id="JJV-XA-74Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RAM-GW-ic0" secondAttribute="trailing" id="QMD-89-cXI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RAM-GW-ic0" secondAttribute="bottom" id="Rw0-Jb-BCH"/>
+                            <constraint firstItem="ipA-0V-tta" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oY7-jc-xl2"/>
+                            <constraint firstItem="ipA-0V-tta" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="t7N-ZI-xC8"/>
+                            <constraint firstItem="nUa-eI-3kQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vm8-4c-v0q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -102,4 +76,9 @@
             <point key="canvasLocation" x="-543" y="157"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="setCamera" width="1920" height="960"/>
+        <image name="smartHome" width="2048" height="2048"/>
+        <image name="watchCamera" width="1920" height="960"/>
+    </resources>
 </document>

@@ -40,7 +40,8 @@ class apiAgent{
                 
                 do{
                     let resData = try JSONDecoder().decode(res, from: data!)
-                    NotificationCenter.default.post(name: NSNotification.Name("APINotification"), object: resData)
+                    let dic = [apiName:resData]
+                    NotificationCenter.default.post(name: NSNotification.Name("APINotification"), object: dic)
                 } catch let DecodingError.dataCorrupted(context) {
                     print(context)
                 } catch let DecodingError.keyNotFound(key, context) {
