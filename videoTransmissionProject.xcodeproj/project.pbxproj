@@ -130,6 +130,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		354F44432457D47C00B50BE5 /* VCDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				354F4441245710CF00B50BE5 /* ViewControllerDelegate.swift */,
+			);
+			path = VCDelegate;
+			sourceTree = "<group>";
+		};
 		356E303C244FF563002EBF59 /* api */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,10 +184,10 @@
 			children = (
 				356E304724506595002EBF59 /* popupVC */,
 				356E303C244FF563002EBF59 /* api */,
+				354F44432457D47C00B50BE5 /* VCDelegate */,
 				3583903C244F4E1C008A8F95 /* settingCameraVC */,
 				35839008244F4AB4008A8F95 /* AppDelegate.swift */,
 				3583900A244F4AB4008A8F95 /* SceneDelegate.swift */,
-				354F4441245710CF00B50BE5 /* ViewControllerDelegate.swift */,
 				3583900C244F4AB4008A8F95 /* ViewController.swift */,
 				3583900E244F4AB4008A8F95 /* Main.storyboard */,
 				35839011244F4AB7008A8F95 /* Assets.xcassets */,
@@ -227,7 +235,7 @@
 				35839001244F4AB4008A8F95 /* Sources */,
 				35839002244F4AB4008A8F95 /* Frameworks */,
 				35839003244F4AB4008A8F95 /* Resources */,
-				4362A2DC6CFBA0D3E50B2EF4 /* [CP] Embed Pods Frameworks */,
+				F3D0A9B629A16BDBCD688318 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,7 +273,7 @@
 				35839022244F4AB7008A8F95 /* Sources */,
 				35839023244F4AB7008A8F95 /* Frameworks */,
 				35839024244F4AB7008A8F95 /* Resources */,
-				6E9A37D6F16D7FEB1FD02746 /* [CP] Embed Pods Frameworks */,
+				B2CB3A4ED997950BE5C4B67B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,40 +358,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4362A2DC6CFBA0D3E50B2EF4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6E9A37D6F16D7FEB1FD02746 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7CD11B1B69BFEFDAC191C4D8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,6 +402,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B2CB3A4ED997950BE5C4B67B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject-videoTransmissionProjectUITests/Pods-videoTransmissionProject-videoTransmissionProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DB193E5CE7AE9B84B6906EC5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +439,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3D0A9B629A16BDBCD688318 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-videoTransmissionProject/Pods-videoTransmissionProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -640,7 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ACX3M6X8Z7;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = videoTransmissionProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -662,7 +670,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ACX3M6X8Z7;
+				DEVELOPMENT_TEAM = DVK8V4759Q;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = videoTransmissionProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

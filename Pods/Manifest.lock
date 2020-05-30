@@ -1,5 +1,5 @@
 PODS:
-  - JitsiMeetSDK (2.7.0)
+  - JitsiMeetSDK (2.9.0)
 
 DEPENDENCIES:
   - JitsiMeetSDK
@@ -9,7 +9,7 @@ SPEC REPOS:
     - JitsiMeetSDK
 
 SPEC CHECKSUMS:
-  JitsiMeetSDK: e09c2864b89fb3ac5f6733f6f85218bccb2c50be
+  JitsiMeetSDK: e108ea68ed0ea9a59c4c90b057c5840db10ff069
 
 PODFILE CHECKSUM: 5224c5acba90bd5554456f59a53edfbe0833b055
 

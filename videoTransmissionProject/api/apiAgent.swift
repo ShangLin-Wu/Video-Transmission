@@ -22,7 +22,6 @@ class apiAgent{
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         do{
-//            let req = try? req.self.toData()
             let req = try? JSONEncoder().encode(req)
             request.httpBody = req
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in

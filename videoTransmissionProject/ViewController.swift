@@ -13,16 +13,19 @@ let url = URL(string: "https://meet.jit.si")
 let CAMERA_SET_API_NAME = "camera/set"
 let CAMERA_LIST_API_NAME = "camera/list"
 let CAMERA_DELETE_API_NAME = "camera/delete"
+
 weak var delegate:ViewControllerDelegate?
 
 class ViewController: UIViewController {
     var cameraName:String!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(notificationReceiver), name: Notification.Name("APINotification"), object: nil)
+        
         delegate = self
 }
-    
+    // MARK: - Notification Receiver
     @objc func notificationReceiver(notification:NSNotification){
         DispatchQueue.main.async {
             let dic = notification.object as! Dictionary<String, Any>
@@ -39,6 +42,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: -  Notification Handler
     func handleCameraSet(res:cameraResponse){
            if(res.status == 0){
             let vc = settingCameraViewController.init(vcString: "setCamera", cameraID: (res.result?.id)!, cameraName: cameraName!)
@@ -60,6 +64,7 @@ class ViewController: UIViewController {
         
     }
     
+    // MARK: - IBAction
     @IBAction func setCameraBtnClick(_ sender: Any) {
         
         let alertController = UIAlertController(title: "攝影機名稱", message: "", preferredStyle: .alert)
@@ -93,6 +98,7 @@ class ViewController: UIViewController {
     }
 }
 
+// MARK: - requestAccessFunc
 extension ViewController: ViewControllerDelegate{
     func presentCameraList(id: String, name: String, vcString: String) {
         let vc = settingCameraViewController.init(vcString:vcString,cameraID: id,cameraName:name)
@@ -100,6 +106,7 @@ extension ViewController: ViewControllerDelegate{
     }
 }
 
+// MARK: - check camera access and pushViewController
 extension UIViewController{
     func requestAccessFunc(_ vc:UIViewController?) {
         if AVCaptureDevice.authorizationStatus(for: .video) ==  .authorized {

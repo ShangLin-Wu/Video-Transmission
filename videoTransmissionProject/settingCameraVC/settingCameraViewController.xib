@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,6 +12,8 @@
             <connections>
                 <outlet property="blackView" destination="GRO-1f-pVy" id="7sO-jx-7ME"/>
                 <outlet property="cameraView" destination="rfE-9W-it4" id="Nyi-71-mPU"/>
+                <outlet property="optionView" destination="VmV-wZ-8VT" id="Iox-cQ-bw3"/>
+                <outlet property="soundBtn" destination="AJa-2v-80S" id="TCQ-FU-qil"/>
                 <outlet property="view" destination="iN0-l3-epB" id="X91-on-aPd"/>
             </connections>
         </placeholder>
@@ -26,13 +28,71 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRO-1f-pVy">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adg-GW-8JM">
+                            <rect key="frame" x="59" y="590" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="SSSS:" destination="-1" eventType="touchUpInside" id="p1n-Yl-p9Z"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="adg-GW-8JM" secondAttribute="trailing" constant="309" id="5lM-I4-0jx"/>
+                        <constraint firstAttribute="bottom" secondItem="adg-GW-8JM" secondAttribute="bottom" constant="276" id="aYQ-15-AC1"/>
+                        <constraint firstItem="adg-GW-8JM" firstAttribute="leading" secondItem="GRO-1f-pVy" secondAttribute="leading" constant="59" id="arO-dK-OD3"/>
+                        <constraint firstItem="adg-GW-8JM" firstAttribute="top" secondItem="GRO-1f-pVy" secondAttribute="top" constant="590" id="yd9-fG-eK6"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmV-wZ-8VT">
                     <rect key="frame" x="0.0" y="706" width="414" height="190"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="9c6-5Q-fJG">
+                            <rect key="frame" x="50" y="35" width="314" height="120"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJa-2v-80S" customClass="UIButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="AJa-2v-80S" secondAttribute="height" multiplier="1:1" id="0cj-Or-p2W"/>
+                                        <constraint firstAttribute="height" constant="120" id="lAq-jX-efU"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="soundBtnClick:" destination="-1" eventType="touchUpInside" id="CD9-CI-2qv"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FK-b4-mfY" customClass="UIButton">
+                                    <rect key="frame" x="194" y="0.0" width="120" height="120"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hangUp" translatesAutoresizingMaskIntoConstraints="NO" id="9K2-fv-s5a">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="9K2-fv-s5a" secondAttribute="height" id="co1-OT-Apy"/>
+                                                <constraint firstAttribute="height" constant="120" id="pPc-KH-l56"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="9K2-fv-s5a" secondAttribute="trailing" id="EnR-KW-DDa"/>
+                                        <constraint firstItem="9K2-fv-s5a" firstAttribute="top" secondItem="5FK-b4-mfY" secondAttribute="top" id="JKe-nF-hxa"/>
+                                        <constraint firstItem="9K2-fv-s5a" firstAttribute="leading" secondItem="5FK-b4-mfY" secondAttribute="leading" id="cOZ-NW-ej6"/>
+                                        <constraint firstAttribute="bottom" secondItem="9K2-fv-s5a" secondAttribute="bottom" id="gU9-Hc-7SW"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="hangUpBtnClick:" destination="-1" eventType="touchUpInside" id="NcG-vx-1US"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="9c6-5Q-fJG" firstAttribute="centerX" secondItem="VmV-wZ-8VT" secondAttribute="centerX" id="LpJ-fH-EVu"/>
                         <constraint firstAttribute="height" constant="190" id="YWv-Il-aZQ"/>
+                        <constraint firstAttribute="bottom" secondItem="9c6-5Q-fJG" secondAttribute="bottom" constant="35" id="qkB-JI-WHW"/>
                     </constraints>
                 </view>
             </subviews>
@@ -54,4 +114,7 @@
             <point key="canvasLocation" x="139" y="154"/>
         </view>
     </objects>
+    <resources>
+        <image name="hangUp" width="512" height="512"/>
+    </resources>
 </document>
